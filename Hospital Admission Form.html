@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOSPITAL ADMISSION FORM</title>
+    <style>
+        .headingstyle{
+            text-align: center;
+            font-family: "Footlight MT Light";
+        }
+        .imagestyle{
+            alignment: center;
+            width: 20%;
+        }
+        .inputstyle{
+            width: 20%;
+            padding: 5px 5px;
+            border-radius: 8px;
+        }
+        div{
+            padding: 8px;
+        }
+        .buttonstyle{
+            width: 20%;
+            border: none;
+            background-color: blue;
+            border-radius: 8px;
+            padding: 10px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<center><img class="imagestyle" src="images/download%20(1).png" alt="loading"></center>
+<h1 style=" color: blue; alignment: top">AVENUE HOSPITAL <br>
+email: avenuehospital.com <br>
+contact us: 0720002000
+</h1>
+
+
+<h2 class="headingstyle">Kindly Fill in The Admission Form Below</h2>
+<h4>Patients details</h4>
+<form action="#">
+    <div>
+    <label>First Name</label>
+    <input class="inputstyle" type="text" name="firstname" required>
+
+    <label>Second Name</label>
+    <input class="inputstyle" type="text" name="secondname" required>
+
+    <label>Surname</label>
+    <input class="inputstyle" type="text" name="surname" required>
+    </div>
+
+    <div>
+        <label>Date of Birth</label>
+        <input class="inputstyle" type="date" name="dob" required>
+
+        <label>Email Address</label>
+        <input class="inputstyle" type="email" name="emailaddress" placeholder="e.g waynematheka@gmail.com" required>
+
+        <label>Phone Number</label>
+        <input class="inputstyle" type="tel" name="phonenumber" required value="+254">
+    </div>
+
+    <div>
+        <label>Occupation</label>
+        <input class="inputstyle" type="text" name="occupation" required>
+
+        <label>Age</label>
+        <input class="inputstyle" type="text" name="age" required>
+
+        <label>Date of Admission</label>
+        <input class="inputstyle" type="datetime-local" name="doa" >
+    </div>
+    <div>
+        <label>Gender</label> <br>
+
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+
+        <input type="radio" name="gender" value="other">
+        <label>Other</label>
+    </div>
+    <div>
+        <label>Marital Status</label> <br>
+
+        <input type="radio" name="maritalstatus" value="single" >
+        <label>Single</label>
+
+        <input type="radio" name="maritalstatus" value="married">
+        <label>Married</label>
+
+        <input type="radio" name="maritalstatus" value="divorced">
+        <label>Divorced</label> <br>
+
+        <input type="radio" name="maritalstatus" value="widower">
+        <label>Widower</label>
+
+        <input type="radio" name="maritalstatus" value="widow">
+        <label>Widow</label>
+
+        <input type="radio" name="maritalstatus" value="other">
+        <label>Other</label>
+    </div>
+    <div>
+        <label>Other Conditions</label> <br>
+        <input type="checkbox" name="otherconditions" value="Asthma">
+        <label>Asthma</label>
+        <input type="checkbox" name="otherconditions" value="Diabetes">
+        <label>Diabetes</label>
+        <input type="checkbox" name="otherconditions" value="sicklecellanaemia">
+        <label>Sickle-Cell Anaemia</label>
+        <input type="checkbox" name="otherconditions" value="other">
+        <label>Other</label>
+    </div>
+<h4>Guardian details(in-case of emergency)</h4>
+    <div>
+        <label>Full Names</label>
+        <input class="inputstyle" type="text" name="fullnames" required>
+
+        <label>Phone Number</label>
+        <input class="inputstyle" type="tel" name="pnumber" required value="+254">
+
+        <label>Relationship</label>
+        <select class="inputstyle" name="relationship">
+            <option value="spouse">Spouse</option>
+            <option value="father">Father</option>
+            <option value="mother">Mother</option>
+            <option value="sister">Sister</option>
+            <option value="brother">Brother</option>
+            <option value="son">Son</option>
+            <option value="daughter">Daughter</option>
+            <option value="otherrelative">Other Relative</option>
+        </select>
+    </div>
+    <div>
+        <label>Payment Method</label> <br>
+        <select class="inputstyle" name="payment">
+            <option value="nhifcover">NHIF cover</option>
+            <option value="insurance">Insurance</option>
+            <option value="cashpayment">Cash Payment</option>
+        </select>
+    </div>
+    <div>
+        <input class="buttonstyle" type="submit" value="submit">
+    </div>
+</form>
+<h3 style="text-align: center; color: blue; font-family: 'Tempus Sans ITC'">THANK YOU FOR CHOOSING US <br>
+WE CURE BUT GOD HEALS</h3>
+</body>
+</html>
